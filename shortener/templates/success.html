@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block site_title %} Success | {{ block.super }}{% endblock %}
+
+{% block content %}
+<h1 class="text-success">Success</h1>
+<p>URL: {{object.url}} has been created</p>
+{{code}}
+<p><a href="{{object.get_short_url}}"> Shortcode: {{object.get_short_url}}</a></p>
+<a href="/" class="btn btn-primary">Add new</a>
+
+{% endblock %}
